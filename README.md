@@ -1,10 +1,13 @@
 # CPCStoryVisualization-Pytorch
+
+![](https://raw.githubusercontent.com/basiclab/CPCStoryVisualization-Pytorch/master/images/introduction4.png)
+
 ```
 Objects in pictures should so be arranged as by their very position to tell their own story.
-    Johann Wolfgang von Goethe (1749-1832)
+           - Johann Wolfgang von Goethe (1749-1832)
 ```
 
-Author: @yunzhusong, @theblackcat102, @redman0226, Huiao-Han Lu, Hong-Han Shuai
+Author: [@yunzhusong](http://github.com/yunzhusong), [@theblackcat102](http://github.com/theblackcat102), [@redman0226](http://github.com/redman0226), Huiao-Han Lu, Hong-Han Shuai
 
 
 Code implementation for Character-Preserving Coherent Story Visualization
@@ -30,6 +33,11 @@ Download [link](https://drive.google.com/drive/folders/1zRT5TCpHTzY32v0YTi9n9-L4
 
 Pororo, original pororo datasets with self labeled segmentation mask of the character.
 
+## Pretrained model
+
+weights for pretrained model can be download at [link](https://drive.google.com/drive/folders/1Oy-Npt19hYvrGAB_u5c_XYnuBsoBu34b?usp=sharing)
+
+Model parameters is the default used in this repository
 
 ## Setup
 
