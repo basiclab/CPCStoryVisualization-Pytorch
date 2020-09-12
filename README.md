@@ -1,6 +1,6 @@
 # CPCStoryVisualization-Pytorch
 
-![](https://raw.githubusercontent.com/basiclab/CPCStoryVisualization-Pytorch/master/images/introduction4.png)
+![](https://raw.githubusercontent.com/basiclab/CPCStoryVisualization-Pytorch/master/images/introduction4.jpg)
 
 ```
 Objects in pictures should so be arranged as by their very position to tell their own story.
