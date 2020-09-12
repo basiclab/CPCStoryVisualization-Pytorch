@@ -41,6 +41,8 @@ Model parameters is the default used in this repository
 
 ## Setup
 
+### Setup environment
+
 ```
     virtualenv -p python3 env
     source env/bin/activate
@@ -54,7 +56,7 @@ Create a environment file .env with the following line:
 DATAPATH = "PATH TO pororoSV/"
 ```
 
-## File placement 
+### File placement 
 
 pororoSV should contain SceneDialogues/  ( where gif files reside ) and *.npy files
 
@@ -71,9 +73,9 @@ pororoSV should contain SceneDialogues/  ( where gif files reside ) and *.npy fi
 3. Change related directory PORORO_PATH, etc
 
 
-## Try to run main_pororo.py and good luck
+4. Try to run main_pororo.py and good luck
 
-## Tensorboard
+### Tensorboard
 
 ```
     tensorboard --logdir output/ --host 0.0.0.0 --port 6009
