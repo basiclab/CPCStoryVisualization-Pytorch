@@ -94,9 +94,9 @@ pororoSV should contain SceneDialogues/  ( where gif files reside ) and *.npy fi
 
 ```
 @inproceedings{song2020CPCSV, 
-            title={Character-Preserving Coherent Story Visualization},  
-            author={Song, Yun-Zhu and Tam, Zhi-Rui and Chen, Hung-Jen and Lu, Huiao-Han and Shuai, Hong-Han},  
-            booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},  
-            year={2020} 
+    title={Character-Preserving Coherent Story Visualization},  
+    author={Song, Yun-Zhu and Tam, Zhi-Rui and Chen, Hung-Jen and Lu, Huiao-Han and Shuai, Hong-Han},  
+    booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},  
+    year={2020} 
 }
 ```
