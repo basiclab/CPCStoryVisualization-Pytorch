@@ -3,17 +3,22 @@
 
 ![](https://raw.githubusercontent.com/basiclab/CPCStoryVisualization-Pytorch/master/images/introduction4.jpg)
 
-```
-Objects in pictures should so be arranged as by their very position to tell their own story.
-           - Johann Wolfgang von Goethe (1749-1832)
-```
-
 Author: [@yunzhusong](http://github.com/yunzhusong), [@theblackcat102](http://github.com/theblackcat102), [@redman0226](http://github.com/redman0226), Huiao-Han Lu, Hong-Han Shuai
 
 [Paper(PDF)](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123620018.pdf)
 
 Code implementation for Character-Preserving Coherent Story Visualization
 
+
+```
+Objects in pictures should so be arranged as by their very position to tell their own story.
+           - Johann Wolfgang von Goethe (1749-1832)
+```
+
+In this paper we propose a new framework named Character-Preserving Coherent Story Visualization (CP-CSV) to tackle the challenges in story visualization: generating a sequence of images that emphasizes preserving the global consistency of characters and scenes across different story pictures.
+
+
+CP-CSV effectively learns to visualize the story by three critical modules: story and context encoder (story and sentence representation learning), figure-ground segmentation (auxiliary task to provide information for preserving character and story consistency), and figure-ground aware generation (image sequence generation by incorporating figure-ground information). Moreover, we propose a metric named Frechet Story Distance (FSD) to evaluate the performance of story visualization. Extensive experiments demonstrate that CP-CSV maintains the details of character information and achieves high consistency among different frames, while FSD better measures the performance of story visualization.
 
 ## Datasets
 
@@ -85,4 +90,13 @@ pororoSV should contain SceneDialogues/  ( where gif files reside ) and *.npy fi
 
 
 
+## Cite
 
+```
+@inproceedings{song2020CPCSV, 
+            title={Character-Preserving Coherent Story Visualization},  
+            author={Song, Yun-Zhu and Tam, Zhi-Rui and Chen, Hung-Jen and Lu, Huiao-Han and Shuai, Hong-Han},  
+            booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},  
+            year={2020} 
+}
+```
