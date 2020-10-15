@@ -82,6 +82,14 @@ pororoSV should contain SceneDialogues/  ( where gif files reside ) and *.npy fi
 
 4. Try to run main_pororo.py and good luck
 
+
+```
+python main_pororo.py --cfg ./cfg/consistency.yml
+```
+
+You need to change the DATA_DIR found in cfg/consistency.yml
+
+
 ### Tensorboard
 
 ```
