@@ -44,6 +44,8 @@ Pororo, original pororo datasets with self labeled segmentation mask of the char
 
 weights for pretrained model can be download at [link](https://drive.google.com/drive/folders/1Oy-Npt19hYvrGAB_u5c_XYnuBsoBu34b?usp=sharing)
 
+training images and preprocess data can be found [here](https://drive.google.com/file/d/1rDjmMr3iqkBjEoE6g05iGyY1I7pi8FTn/view?usp=sharing)
+
 Model parameters is the default used in this repository
 
 ## Setup
