@@ -4,7 +4,7 @@ DATASET_NAME: ''
 EMBEDDING_TYPE: 'universal'
 GPU_ID: '0'
 Z_DIM: 100
-DATA_DIR: '/mnt/HDD/img_pororo/'
+DATA_DIR: './img_pororo/'
 IMSIZE: 64
 SESIZE: 64
 WORKERS: 6 
@@ -13,15 +13,17 @@ VIDEO_LEN: 5
 VIS_COUNT: 10
 LABEL_NUM: 9
 EVALUATE_FID_SCORE: False
-USE_SEQ_CONSISTENCY: True
+USE_SEQ_CONSISTENCY: False
+CASCADE_MODEL: False
 CONSISTENCY_RATIO: 1.0
 SEGMENT_LEARNING: True
 SEGMENT_RATIO: 1.0
 IMAGE_RATIO: 5.0
 TRAIN:
     FLAG: True
-    IM_BATCH_SIZE: 100 #60 #120
-    ST_BATCH_SIZE: 20 #12 #24
+    SEGMENT_NAME: 'img_segment' # the segmentation images before/after refinement (img_segment/img_segment_refine)
+    IM_BATCH_SIZE: 90
+    ST_BATCH_SIZE: 18
     MAX_EPOCH: 120
     LR_DECAY_EPOCH: 20
     SNAPSHOT_INTERVAL: 10
