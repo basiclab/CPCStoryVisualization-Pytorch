@@ -4,7 +4,7 @@ DATASET_NAME: ''
 EMBEDDING_TYPE: 'universal'
 GPU_ID: '0'
 Z_DIM: 100
-DATA_DIR: './img_pororo/'
+DATA_DIR: [TODO] #'./pororo_dataset/img_pororo/'
 IMSIZE: 64
 SESIZE: 64
 WORKERS: 6 

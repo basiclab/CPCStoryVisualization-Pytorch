@@ -15,7 +15,7 @@ import dateutil.tz
 import numpy as np
 import functools
 import datasets.pororo as data
-import datasets.utils as video_transform
+#import datasets.utils as video_transform
 
 dir_path = (os.path.abspath(os.path.join(os.path.realpath(__file__), './.')))
 sys.path.append(dir_path)
@@ -31,7 +31,7 @@ def parse_args():
     parser.add_argument('--debug', default=False)
     parser.add_argument('--cfg', dest='cfg_file',
                         help='optional config file',
-                        default='/work/yunzhu032/StoryVisualize/cfg/final.yml', type=str)
+                        default='./cfg/final.yml', type=str)
     parser.add_argument('--load_ckpt', default=None, type=str)
     parser.add_argument('--continue_ckpt', default=None, type=str)
     parser.add_argument('--gpu',  dest='gpu_id', type=str, default='')
@@ -81,6 +81,14 @@ if __name__ == "__main__":
             transforms.ToTensor(),
             transforms.Normalize([0.5], [0.5])])
             #transforms.Normalize(mean=0.5, std=0.5)])
+
+        def video_transform(video, image_transform):
+            vid = []
+            for im in video:
+                vid.append(image_transform(im))
+            vid = torch.stack(vid).permute(1, 0 ,2, 3)
+
+            return vid
 
         video_len = 5
         n_channels = 3

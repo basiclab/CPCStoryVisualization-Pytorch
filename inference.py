@@ -116,7 +116,7 @@ class Infer(object):
         models = os.listdir(self.model_dir)
         with open(output_score_filename, 'a') as f:
             f.write('epoch,fid,vfid\n')
-        for epoch in range(120):
+        for epoch in range(121):
             if 'netG_epoch_{}.pth'.format(epoch) in models:
                 print('Evaluating epoch {}'.format(epoch))
                 netG = self.load_network_stageI(self.output_dir, load_ckpt=epoch)
@@ -131,12 +131,12 @@ class Infer(object):
         models = os.listdir(self.model_dir)
         with open(output_score_filename, 'a') as f:
             f.write('epoch,fvd\n')
-        for epoch in range(120):
+        for epoch in range(121, 0, -1):
             if 'netG_epoch_{}.pth'.format(epoch) in models:
                 print('Evaluating epoch {}'.format(epoch))
                 netG = self.load_network_stageI(self.output_dir, load_ckpt=epoch)
                 inference_samples(netG, testloader, save_dir)
-                fvd_value = self.calculate_fvd(save_dir, epoch=epoch, num_of_video=288)
+                fvd_value = self.calculate_fvd(save_dir, epoch=epoch, num_of_video=272) #288)
                 with open(output_score_filename, 'a') as f:
                     f.write('{},{}\n'.format(epoch, fvd_value))
 
@@ -206,7 +206,7 @@ class Infer(object):
 
         models = os.listdir(self.model_dir)
 
-        for epoch in range(121):
+        for epoch in range(121, 0, -1):
             if 'netG_epoch_{}.pth'.format(epoch) in models:
                 if os.path.exists(os.path.join(self.save_dir, 'original')):
                     shutil.rmtree(os.path.join(self.save_dir, 'original'))

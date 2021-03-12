@@ -70,11 +70,13 @@ Download [link](https://drive.google.com/drive/folders/1zRT5TCpHTzY32v0YTi9n9-L4
 
 ## Evaluate CPCSV
 
-Pretrained model can be download [here](https://drive.google.com/drive/folders/1Oy-Npt19hYvrGAB_u5c_XYnuBsoBu34b?usp=sharing). 
+Pretrained model (final_model.zip) can be download [here](https://drive.google.com/drive/folders/1Oy-Npt19hYvrGAB_u5c_XYnuBsoBu34b?usp=sharing). 
 
 ### Steps
 
 1. Download the Pororo dataset and put at **DATA_DIR**, [downloaded](https://drive.google.com/drive/folders/1Oy-Npt19hYvrGAB_u5c_XYnuBsoBu34b?usp=sharing). The dataset should contain SceneDialogues/  ( where gif files reside ) and *.npy files.
+
+2. Download the pretrained model, [download](https://drive.google.com/file/d/1CnKAQ4VgLpait2685NQZHgZdIRbPCrQt/view?usp=sharing), and put in the **./output** directory.
 
 2. Modify the **DATA_DIR** in _./cfg/final.yml_
 

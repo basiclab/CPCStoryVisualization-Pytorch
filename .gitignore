@@ -8,6 +8,8 @@ model_saved*.py
 *_output/
 Evaluation/
 *.png
+pororo_dataset/
+img_pororo/
 # C extensions
 *.sh
 gpu*
